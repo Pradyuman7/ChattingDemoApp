@@ -33,8 +33,6 @@ This is required because the default security rules for the Android Firebase all
 
 Then click on the Database tab in the Firebase Menu.
 
-![android-chat-application-1](https://user-images.githubusercontent.com/41565823/47960986-13696c80-e003-11e8-94f9-01f25d1a47ab.png)
-      
 It shows the root of the JSON tree, we would be adding a child node called listItems and then will add each item under it. When we add data to the JSON tree, it becomes a new node in the existing JSON structure with an associated key.
 
 Also copy the URL of database.
