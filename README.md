@@ -8,17 +8,17 @@ This is a demo app requested by people on stack overflow, to show how to create 
 First of all, create a firebase account. Follow following steps:
 
 1. Go to Firebase Website firebase.google.com and create a firebase account to start with. Go to Firebase console and Create a New Project by clicking on the “Create New Project” Button as shown below.
-       < image1 >
-       
+
+![firebase1-2](https://user-images.githubusercontent.com/41565823/47960988-13696c80-e003-11e8-9bc1-5518045a1acb.png)
        
 2. Give the Project name and country you are currently in, Once you are done click on “Create Project” button.
 
-      <image2>
+![android-chat-application-2](https://user-images.githubusercontent.com/41565823/47960985-13696c80-e003-11e8-8e80-504098bad12b.png)
   
 
 3. In the next screen choose “Add Firebase to your Android app” and then add the package details and Debug signing certificate SHA-1 key( This is required if you want to enable certain features like Dynamic Links, Invites, and Google Sign-In etc. otherwise it is an optional field).
 
-      <image3>
+![android-chat-application-3](https://user-images.githubusercontent.com/41565823/47960984-13696c80-e003-11e8-8f2c-1615cf8b3671.png)
 
 This will download the google-services.json file. Download it to your computer. We will add it to our android app later.
 
@@ -26,13 +26,14 @@ This will download the google-services.json file. Download it to your computer. 
 
 4. In the project’s dashboard. Click on Auth Menu, then in the SIGN-IN METHOD click on Email/Password and enable it.
 
-      <image4>
+![firebase7](https://user-images.githubusercontent.com/41565823/47960990-14020300-e003-11e8-810e-491c5462dd78.png)
+
   
 This is required because the default security rules for the Android Firebase allows only authenticated users to read and write.
 
 Then click on the Database tab in the Firebase Menu.
 
-      <image5>
+![android-chat-application-1](https://user-images.githubusercontent.com/41565823/47960986-13696c80-e003-11e8-94f9-01f25d1a47ab.png)
       
 It shows the root of the JSON tree, we would be adding a child node called listItems and then will add each item under it. When we add data to the JSON tree, it becomes a new node in the existing JSON structure with an associated key.
 
@@ -40,7 +41,7 @@ Also copy the URL of database.
 
 You can check the Rules tab to see or change the security rules for reading and writing on Android Firebase Database. Below figure shows the default settings.
 
-      <image6>
+![5](https://user-images.githubusercontent.com/41565823/47960983-13696c80-e003-11e8-8014-010933ccff69.png)
       
       
 You can change these to true, if you want free unauthenticated access to your Firebase. Once you are done with this, Let’s create our Android chat Application that will connect to Firebase Database we have just created and uses Firebase Authentication that we have enabled in the console.
@@ -58,7 +59,7 @@ You can change these to true, if you want free unauthenticated access to your Fi
 
 After Gradle syncs the project, add the google-services.json file to your project’s app folder as shown below.
 
-<image7>
+![firebase5](https://user-images.githubusercontent.com/41565823/47960991-14020300-e003-11e8-9077-d45821630baa.png)
   
 Since we need to connect to the Network add the Internet permission in AndroidManifest.xml file.
 
