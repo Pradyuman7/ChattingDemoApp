@@ -66,8 +66,9 @@ After Gradle syncs the project, add the google-services.json file to your projec
   
 Since we need to connect to the Network add the Internet permission in AndroidManifest.xml file.
 
-
-  `<uses-permission android:name="android.permission.INTERNET"/>`
+```
+<uses-permission android:name="android.permission.INTERNET"/>
+```
 
 
 Next, open your app’s build.gradle and add the following dependencies in the dependencies section:
